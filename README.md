@@ -34,3 +34,5 @@ Note that the [Alfred Powerpack](https://www.alfredapp.com/powerpack/) is requir
 ## License
 
 Code released under the [MIT License](https://github.com/alexchantastic/alfred-open-with-neovim-workflow/blob/main/LICENSE).
+
+Neovim logo by [Jason Long](https://twitter.com/jasonlong), licensed under [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/).
