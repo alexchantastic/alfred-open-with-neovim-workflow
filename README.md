@@ -1,6 +1,6 @@
 # alfred-open-with-neovim-workflow
 
-![Screenshot](https://github.com/alexchantastic/alfred-open-with-neovim-workflow/assets/604167/e3568d01-5bb3-4e71-9190-c2f823fa2d20)
+![Screenshot](https://github.com/alexchantastic/alfred-open-with-neovim-workflow/assets/604167/db0d0e03-c2c5-45fe-87d6-bc7d7db2b962)
 
 An [Alfred 5](https://www.alfredapp.com/) workflow opening files or folders with [Neovim](https://neovim.io/).
 
