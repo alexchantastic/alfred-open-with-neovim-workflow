@@ -4,9 +4,11 @@
 
 An [Alfred 5](https://www.alfredapp.com/) workflow opening files or folders with [Neovim](https://neovim.io/) in your [configured terminal](https://www.alfredapp.com/help/features/terminal/).
 
-## Notice
+## Configuration
 
-This workflow is currently only configured to open Neovim in [iTerm2](https://iterm2.com/). If you would like to open Neovim in another terminal emulator or Neovim GUI, please open an issue with your request and I'll try to get to it!
+There isn't any configuration necessary with the workflow itself. However, if you would like Neovim to open in your terminal of choice, you can configure Alfred to specify a custom terminal application to use.
+
+If you are using iTerm2, check out [vitorgalvao/custom-alfred-iterm-scripts](https://github.com/vitorgalvao/custom-alfred-iterm-scripts) for how to configure Alfred.
 
 ## Installation
 
