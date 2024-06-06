@@ -21,6 +21,31 @@
 				<false/>
 			</dict>
 		</array>
+		<key>5063EDCA-534F-41F7-922C-60BE46F9E672</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>03255E1A-57E2-47A1-9CE8-17155D4CED69</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>A715DB3D-EAD1-4231-AD8D-D0669E91AFE2</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>F94D0AD4-6645-422A-9145-B142872D8C33</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>52F4BCF3-C8B2-4141-A8EA-4D1C36D52BE9</key>
 		<array>
 			<dict>
@@ -63,7 +88,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>F94D0AD4-6645-422A-9145-B142872D8C33</string>
+				<string>5063EDCA-534F-41F7-922C-60BE46F9E672</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -302,6 +327,38 @@
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{query}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>1</integer>
+						<key>matchstring</key>
+						<string></string>
+						<key>outputlabel</key>
+						<string>Path</string>
+						<key>uid</key>
+						<string>A715DB3D-EAD1-4231-AD8D-D0669E91AFE2</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>No Path</string>
+				<key>hideelse</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>5063EDCA-534F-41F7-922C-60BE46F9E672</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>An Alfred 5 workflow for opening files or folders with Neovim.</string>
@@ -321,17 +378,24 @@
 			<key>ypos</key>
 			<real>265</real>
 		</dict>
+		<key>5063EDCA-534F-41F7-922C-60BE46F9E672</key>
+		<dict>
+			<key>xpos</key>
+			<real>270</real>
+			<key>ypos</key>
+			<real>475</real>
+		</dict>
 		<key>52F4BCF3-C8B2-4141-A8EA-4D1C36D52BE9</key>
 		<dict>
 			<key>xpos</key>
-			<real>745</real>
+			<real>760</real>
 			<key>ypos</key>
 			<real>455</real>
 		</dict>
 		<key>6A713AA3-2699-48D7-BCA8-26020A874075</key>
 		<dict>
 			<key>xpos</key>
-			<real>540</real>
+			<real>585</real>
 			<key>ypos</key>
 			<real>475</real>
 		</dict>
@@ -352,7 +416,7 @@
 		<key>F94D0AD4-6645-422A-9145-B142872D8C33</key>
 		<dict>
 			<key>xpos</key>
-			<real>315</real>
+			<real>395</real>
 			<key>ypos</key>
 			<real>455</real>
 		</dict>
@@ -362,7 +426,7 @@
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.1.0</string>
+	<string>1.1.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/alexchantastic/alfred-open-with-neovim-workflow</string>
 </dict>
