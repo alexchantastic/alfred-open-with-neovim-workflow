@@ -2,9 +2,7 @@
 
 ![Screenshot](https://github.com/alexchantastic/alfred-open-with-neovim-workflow/assets/604167/db0d0e03-c2c5-45fe-87d6-bc7d7db2b962)
 
-An [Alfred 5](https://www.alfredapp.com/) workflow opening files or folders with [Neovim](https://neovim.io/).
-
-Based off of my similar extension for VSCode: [alexchantastic/alfred-open-with-vscode-workflow](https://github.com/alexchantastic/alfred-open-with-vscode-workflow).
+An [Alfred 5](https://www.alfredapp.com/) workflow opening files or folders with [Neovim](https://neovim.io/) in your [configured terminal](https://www.alfredapp.com/help/features/terminal/).
 
 ## Notice
 
