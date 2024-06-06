@@ -12,7 +12,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>6B1C7938-B468-4E9D-8598-B26BB98B90FE</string>
+				<string>03255E1A-57E2-47A1-9CE8-17155D4CED69</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -21,13 +21,49 @@
 				<false/>
 			</dict>
 		</array>
-		<key>6B1C7938-B468-4E9D-8598-B26BB98B90FE</key>
-		<array/>
+		<key>52F4BCF3-C8B2-4141-A8EA-4D1C36D52BE9</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>03255E1A-57E2-47A1-9CE8-17155D4CED69</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>6A713AA3-2699-48D7-BCA8-26020A874075</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>03255E1A-57E2-47A1-9CE8-17155D4CED69</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>BB36521F-27E9-4608-8FB9-DF063652E6EE</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>52F4BCF3-C8B2-4141-A8EA-4D1C36D52BE9</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>CC170ECD-6B82-4A05-8681-8185ACE453FE</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>6B1C7938-B468-4E9D-8598-B26BB98B90FE</string>
+				<string>F94D0AD4-6645-422A-9145-B142872D8C33</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -40,7 +76,20 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>6B1C7938-B468-4E9D-8598-B26BB98B90FE</string>
+				<string>03255E1A-57E2-47A1-9CE8-17155D4CED69</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>F94D0AD4-6645-422A-9145-B142872D8C33</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6A713AA3-2699-48D7-BCA8-26020A874075</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -80,132 +129,15 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
 				<key>escaping</key>
-				<integer>68</integer>
+				<integer>127</integer>
 				<key>script</key>
-				<string>on run
-
-  set theQuery to "{query}"
-  set finderSelection to ""
-  set theTarget to ""
-  set defaultTarget to (path to home folder as alias)
-  -- comment line above and uncomment line below to open desktop instead of user home when there's no selection or open folder in the Finder:
-  -- set defaultTarget to (path to desktop folder as alias)
-
-  if theQuery is "" then
-      tell application "Finder"
-          set finderSelection to (get selection)
-          if length of finderSelection is greater than 0 then
-              set theTarget to finderSelection
-          else
-              try
-                  set theTarget to (folder of the front window as alias)
-              on error
-                  set theTarget to defaultTarget
-              end try
-          end if
-
-          tell application "iTerm"
-              set posixTarget to POSIX path of (theTarget as alias)
-              if it is not running then
-                  launch
-                  tell current session of current window
-                      write text "nvim \"" &amp; posixTarget &amp; "\""
-                  end tell
-              else
-                  set newWindow to (create window with default profile)
-                  tell current session of newWindow
-                      write text "nvim \"" &amp; posixTarget &amp; "\""
-                  end tell
-              end if
-          end tell
-
-      end tell
-  else
-      try
-          set targets to {}
-          set oldDelimiters to text item delimiters
-          set text item delimiters to tab
-          set qArray to every text item of theQuery
-          set text item delimiters to oldDelimiters
-          repeat with atarget in qArray
-
-              if atarget starts with "~" then
-                  set userHome to POSIX path of (path to home folder)
-                  if userHome ends with "/" then
-                      set userHome to characters 1 thru -2 of userHome as string
-                  end if
-
-                  try
-                      set atarget to userHome &amp; characters 2 thru -1 of atarget as string
-                  on error
-                      set atarget to userHome
-                  end try
-
-              end if
-
-              set targetAlias to ((POSIX file atarget) as alias)
-              set targets to targets &amp; targetAlias
-          end repeat
-
-          set theTarget to targets
-
-          tell application "iTerm"
-              set posixTarget to POSIX path of (theTarget as alias)
-              if it is not running then
-                  launch
-                  tell current session of current window
-                      write text "nvim \"" &amp; posixTarget &amp; "\""
-                  end tell
-              else
-                  set newWindow to (create window with default profile)
-                  tell current session of newWindow
-                      write text "nvim \"" &amp; posixTarget &amp; "\""
-                  end tell
-              end if
-          end tell
-
-      on error
-          return (atarget as string) &amp; " is not a valid file or folder path."
-      end try
-  end if
-
-  return theQuery
-end run</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
+				<string>nvim {query}</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.action.terminalcommand</string>
 			<key>uid</key>
-			<string>6B1C7938-B468-4E9D-8598-B26BB98B90FE</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>nvim</string>
-				<key>subtext</key>
-				<string>Open Finder folder or selection in Neovim or optionally enter a path to open</string>
-				<key>text</key>
-				<string>Open with Neovim</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>CC170ECD-6B82-4A05-8681-8185ACE453FE</string>
+			<string>03255E1A-57E2-47A1-9CE8-17155D4CED69</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -287,44 +219,150 @@ end run</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>tasksettings</key>
+				<dict/>
+				<key>taskuid</key>
+				<string>com.alfredapp.automation.core/files-and-folders/finder.windows.current</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.automation.task</string>
+			<key>uid</key>
+			<string>52F4BCF3-C8B2-4141-A8EA-4D1C36D52BE9</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>tasksettings</key>
+				<dict/>
+				<key>taskuid</key>
+				<string>com.alfredapp.automation.core/files-and-folders/finder.selection</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.automation.task</string>
+			<key>uid</key>
+			<string>F94D0AD4-6645-422A-9145-B142872D8C33</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>nvim</string>
+				<key>subtext</key>
+				<string>Open Finder folder or selection in Neovim or optionally enter a path to open</string>
+				<key>text</key>
+				<string>Open with Neovim</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>CC170ECD-6B82-4A05-8681-8185ACE453FE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{query}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>1</integer>
+						<key>matchstring</key>
+						<string></string>
+						<key>outputlabel</key>
+						<string>Selection</string>
+						<key>uid</key>
+						<string>BB36521F-27E9-4608-8FB9-DF063652E6EE</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>No Selection</string>
+				<key>hideelse</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>6A713AA3-2699-48D7-BCA8-26020A874075</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>An Alfred 5 workflow for opening files or folders with Neovim.</string>
 	<key>uidata</key>
 	<dict>
+		<key>03255E1A-57E2-47A1-9CE8-17155D4CED69</key>
+		<dict>
+			<key>xpos</key>
+			<real>990</real>
+			<key>ypos</key>
+			<real>75</real>
+		</dict>
 		<key>23DEA358-A623-4725-95B2-79C207AF4556</key>
 		<dict>
 			<key>xpos</key>
-			<real>300</real>
+			<real>95</real>
 			<key>ypos</key>
-			<real>320</real>
+			<real>265</real>
 		</dict>
-		<key>6B1C7938-B468-4E9D-8598-B26BB98B90FE</key>
+		<key>52F4BCF3-C8B2-4141-A8EA-4D1C36D52BE9</key>
 		<dict>
 			<key>xpos</key>
-			<real>495</real>
+			<real>745</real>
 			<key>ypos</key>
-			<real>100</real>
+			<real>455</real>
+		</dict>
+		<key>6A713AA3-2699-48D7-BCA8-26020A874075</key>
+		<dict>
+			<key>xpos</key>
+			<real>540</real>
+			<key>ypos</key>
+			<real>475</real>
 		</dict>
 		<key>CC170ECD-6B82-4A05-8681-8185ACE453FE</key>
 		<dict>
 			<key>xpos</key>
-			<real>300</real>
+			<real>95</real>
 			<key>ypos</key>
-			<real>210</real>
+			<real>455</real>
 		</dict>
 		<key>DDFAE429-BEEC-49EA-BEDB-7E71BD402695</key>
 		<dict>
 			<key>xpos</key>
 			<real>100</real>
 			<key>ypos</key>
-			<real>20</real>
+			<real>75</real>
+		</dict>
+		<key>F94D0AD4-6645-422A-9145-B142872D8C33</key>
+		<dict>
+			<key>xpos</key>
+			<real>315</real>
+			<key>ypos</key>
+			<real>455</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
 	<array/>
+	<key>variablesdontexport</key>
+	<array/>
 	<key>version</key>
-	<string>1.0.0</string>
+	<string>1.1.0</string>
 	<key>webaddress</key>
 	<string>https://github.com/alexchantastic/alfred-open-with-neovim-workflow</string>
 </dict>
