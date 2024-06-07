@@ -25,6 +25,10 @@ Note that the [Alfred Powerpack](https://www.alfredapp.com/powerpack/) is requir
 2. Press `enter` to open the current folder or the selected file
 3. Alternatively, type a path to open (e.g., `~/Desktop`)
 
+When multiple folders are selected, the workflow will only open the first selected folder (all other selected folders are ignored).
+
+When a heterogenous selection of files _and_ folders are selected, the workflow will open the files in one Neovim instance and the first selected folder in a separate Neovim instance.
+
 ### Search & Open
 
 1. Use the keyword `nvimf` to trigger the workflow

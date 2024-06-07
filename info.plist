@@ -12,7 +12,20 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>03255E1A-57E2-47A1-9CE8-17155D4CED69</string>
+				<string>E5F1BACC-6B42-4C3F-9DA4-FACA5B0EC468</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>3998CA42-874A-448F-81CB-EF6F37BF27BC</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3C65908E-C121-4F1A-B146-888F48D6C6AB</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -25,7 +38,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>03255E1A-57E2-47A1-9CE8-17155D4CED69</string>
+				<string>E5F1BACC-6B42-4C3F-9DA4-FACA5B0EC468</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -50,7 +63,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>03255E1A-57E2-47A1-9CE8-17155D4CED69</string>
+				<string>E5F1BACC-6B42-4C3F-9DA4-FACA5B0EC468</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -59,11 +72,39 @@
 				<false/>
 			</dict>
 		</array>
+		<key>58A4C2CA-3D8A-41E1-A2A1-190A21C11D0E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F1B64F7A-8B48-42C8-A3A9-C0F99B79DFB3</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>5D39D1B4-87CE-427F-A5D5-984954932FF7</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A2EDD6AA-8EED-42D3-8A9F-3FCC1AF713D7</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>BA047610-E27D-42BB-94EC-007EC1D27816</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>6A713AA3-2699-48D7-BCA8-26020A874075</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>03255E1A-57E2-47A1-9CE8-17155D4CED69</string>
+				<string>E5F1BACC-6B42-4C3F-9DA4-FACA5B0EC468</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -76,6 +117,32 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>52F4BCF3-C8B2-4141-A8EA-4D1C36D52BE9</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>812F7282-DBC7-4D77-BBEE-F771657B5D5C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>4795B6F4-F5D7-4C20-8360-331144B1E643</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>A2EDD6AA-8EED-42D3-8A9F-3FCC1AF713D7</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>812F7282-DBC7-4D77-BBEE-F771657B5D5C</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -101,11 +168,62 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>03255E1A-57E2-47A1-9CE8-17155D4CED69</string>
+				<string>E5F1BACC-6B42-4C3F-9DA4-FACA5B0EC468</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>E5F1BACC-6B42-4C3F-9DA4-FACA5B0EC468</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F15563D1-30B4-40C0-85EE-569B02B0F0EF</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>58A4C2CA-3D8A-41E1-A2A1-190A21C11D0E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>F15563D1-30B4-40C0-85EE-569B02B0F0EF</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>5D39D1B4-87CE-427F-A5D5-984954932FF7</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>F1B64F7A-8B48-42C8-A3A9-C0F99B79DFB3</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3998CA42-874A-448F-81CB-EF6F37BF27BC</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>BA047610-E27D-42BB-94EC-007EC1D27816</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -157,12 +275,100 @@
 				<key>escaping</key>
 				<integer>127</integer>
 				<key>script</key>
-				<string>nvim {query}</string>
+				<string>cd $(dirname {var:filepath1}); nvim {var:filepath}</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.terminalcommand</string>
 			<key>uid</key>
-			<string>03255E1A-57E2-47A1-9CE8-17155D4CED69</string>
+			<string>4795B6F4-F5D7-4C20-8360-331144B1E643</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>tasksettings</key>
+				<dict/>
+				<key>taskuid</key>
+				<string>com.alfredapp.automation.core/files-and-folders/path.filter.files</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.automation.task</string>
+			<key>uid</key>
+			<string>F15563D1-30B4-40C0-85EE-569B02B0F0EF</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{query}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>1</integer>
+						<key>matchstring</key>
+						<string></string>
+						<key>outputlabel</key>
+						<string>Path</string>
+						<key>uid</key>
+						<string>BA047610-E27D-42BB-94EC-007EC1D27816</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>No Path</string>
+				<key>hideelse</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>5D39D1B4-87CE-427F-A5D5-984954932FF7</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>filepath</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>A2EDD6AA-8EED-42D3-8A9F-3FCC1AF713D7</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>delimiter</key>
+				<string>	</string>
+				<key>discardemptyarguments</key>
+				<false/>
+				<key>outputas</key>
+				<integer>0</integer>
+				<key>trimarguments</key>
+				<true/>
+				<key>variableprefix</key>
+				<string>filepath</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.split</string>
+			<key>uid</key>
+			<string>812F7282-DBC7-4D77-BBEE-F771657B5D5C</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -247,15 +453,104 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>delimiter</key>
+				<string>	</string>
+				<key>discardemptyarguments</key>
+				<false/>
+				<key>outputas</key>
+				<integer>1</integer>
+				<key>trimarguments</key>
+				<true/>
+				<key>variableprefix</key>
+				<string>split</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.split</string>
+			<key>uid</key>
+			<string>E5F1BACC-6B42-4C3F-9DA4-FACA5B0EC468</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>cd {var:folderpath1}; nvim</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.terminalcommand</string>
+			<key>uid</key>
+			<string>3C65908E-C121-4F1A-B146-888F48D6C6AB</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>tasksettings</key>
 				<dict/>
 				<key>taskuid</key>
-				<string>com.alfredapp.automation.core/files-and-folders/finder.windows.current</string>
+				<string>com.alfredapp.automation.core/files-and-folders/path.filter.directories</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.automation.task</string>
 			<key>uid</key>
-			<string>52F4BCF3-C8B2-4141-A8EA-4D1C36D52BE9</string>
+			<string>58A4C2CA-3D8A-41E1-A2A1-190A21C11D0E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{query}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>1</integer>
+						<key>matchstring</key>
+						<string></string>
+						<key>outputlabel</key>
+						<string>Path</string>
+						<key>uid</key>
+						<string>BA047610-E27D-42BB-94EC-007EC1D27816</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>No Path</string>
+				<key>hideelse</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>F1B64F7A-8B48-42C8-A3A9-C0F99B79DFB3</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>delimiter</key>
+				<string>	</string>
+				<key>discardemptyarguments</key>
+				<false/>
+				<key>outputas</key>
+				<integer>0</integer>
+				<key>trimarguments</key>
+				<true/>
+				<key>variableprefix</key>
+				<string>folderpath</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.split</string>
+			<key>uid</key>
+			<string>3998CA42-874A-448F-81CB-EF6F37BF27BC</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -271,6 +566,21 @@
 			<string>alfred.workflow.automation.task</string>
 			<key>uid</key>
 			<string>F94D0AD4-6645-422A-9145-B142872D8C33</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>tasksettings</key>
+				<dict/>
+				<key>taskuid</key>
+				<string>com.alfredapp.automation.core/files-and-folders/finder.windows.current</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.automation.task</string>
+			<key>uid</key>
+			<string>52F4BCF3-C8B2-4141-A8EA-4D1C36D52BE9</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -310,20 +620,20 @@
 						<key>matchstring</key>
 						<string></string>
 						<key>outputlabel</key>
-						<string>Selection</string>
+						<string>Path</string>
 						<key>uid</key>
-						<string>BB36521F-27E9-4608-8FB9-DF063652E6EE</string>
+						<string>A715DB3D-EAD1-4231-AD8D-D0669E91AFE2</string>
 					</dict>
 				</array>
 				<key>elselabel</key>
-				<string>No Selection</string>
+				<string>No Path</string>
 				<key>hideelse</key>
 				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
-			<string>6A713AA3-2699-48D7-BCA8-26020A874075</string>
+			<string>5063EDCA-534F-41F7-922C-60BE46F9E672</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -342,20 +652,20 @@
 						<key>matchstring</key>
 						<string></string>
 						<key>outputlabel</key>
-						<string>Path</string>
+						<string>Selection</string>
 						<key>uid</key>
-						<string>A715DB3D-EAD1-4231-AD8D-D0669E91AFE2</string>
+						<string>BB36521F-27E9-4608-8FB9-DF063652E6EE</string>
 					</dict>
 				</array>
 				<key>elselabel</key>
-				<string>No Path</string>
+				<string>No Selection</string>
 				<key>hideelse</key>
 				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
-			<string>5063EDCA-534F-41F7-922C-60BE46F9E672</string>
+			<string>6A713AA3-2699-48D7-BCA8-26020A874075</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -364,59 +674,122 @@
 	<string>An Alfred 5 workflow for opening files or folders with Neovim.</string>
 	<key>uidata</key>
 	<dict>
-		<key>03255E1A-57E2-47A1-9CE8-17155D4CED69</key>
-		<dict>
-			<key>xpos</key>
-			<real>990</real>
-			<key>ypos</key>
-			<real>75</real>
-		</dict>
 		<key>23DEA358-A623-4725-95B2-79C207AF4556</key>
 		<dict>
 			<key>xpos</key>
-			<real>95</real>
+			<real>120</real>
 			<key>ypos</key>
-			<real>265</real>
+			<real>305</real>
+		</dict>
+		<key>3998CA42-874A-448F-81CB-EF6F37BF27BC</key>
+		<dict>
+			<key>xpos</key>
+			<real>1620</real>
+			<key>ypos</key>
+			<real>425</real>
+		</dict>
+		<key>3C65908E-C121-4F1A-B146-888F48D6C6AB</key>
+		<dict>
+			<key>xpos</key>
+			<real>1700</real>
+			<key>ypos</key>
+			<real>395</real>
+		</dict>
+		<key>4795B6F4-F5D7-4C20-8360-331144B1E643</key>
+		<dict>
+			<key>xpos</key>
+			<real>1700</real>
+			<key>ypos</key>
+			<real>180</real>
 		</dict>
 		<key>5063EDCA-534F-41F7-922C-60BE46F9E672</key>
 		<dict>
 			<key>xpos</key>
-			<real>270</real>
+			<real>335</real>
 			<key>ypos</key>
 			<real>475</real>
 		</dict>
 		<key>52F4BCF3-C8B2-4141-A8EA-4D1C36D52BE9</key>
 		<dict>
 			<key>xpos</key>
-			<real>760</real>
+			<real>885</real>
 			<key>ypos</key>
 			<real>455</real>
+		</dict>
+		<key>58A4C2CA-3D8A-41E1-A2A1-190A21C11D0E</key>
+		<dict>
+			<key>xpos</key>
+			<real>1240</real>
+			<key>ypos</key>
+			<real>395</real>
+		</dict>
+		<key>5D39D1B4-87CE-427F-A5D5-984954932FF7</key>
+		<dict>
+			<key>xpos</key>
+			<real>1430</real>
+			<key>ypos</key>
+			<real>200</real>
 		</dict>
 		<key>6A713AA3-2699-48D7-BCA8-26020A874075</key>
 		<dict>
 			<key>xpos</key>
-			<real>585</real>
+			<real>710</real>
 			<key>ypos</key>
 			<real>475</real>
+		</dict>
+		<key>812F7282-DBC7-4D77-BBEE-F771657B5D5C</key>
+		<dict>
+			<key>xpos</key>
+			<real>1620</real>
+			<key>ypos</key>
+			<real>210</real>
+		</dict>
+		<key>A2EDD6AA-8EED-42D3-8A9F-3FCC1AF713D7</key>
+		<dict>
+			<key>xpos</key>
+			<real>1550</real>
+			<key>ypos</key>
+			<real>210</real>
 		</dict>
 		<key>CC170ECD-6B82-4A05-8681-8185ACE453FE</key>
 		<dict>
 			<key>xpos</key>
-			<real>95</real>
+			<real>120</real>
 			<key>ypos</key>
 			<real>455</real>
 		</dict>
 		<key>DDFAE429-BEEC-49EA-BEDB-7E71BD402695</key>
 		<dict>
 			<key>xpos</key>
-			<real>100</real>
+			<real>120</real>
 			<key>ypos</key>
-			<real>75</real>
+			<real>160</real>
+		</dict>
+		<key>E5F1BACC-6B42-4C3F-9DA4-FACA5B0EC468</key>
+		<dict>
+			<key>xpos</key>
+			<real>1065</real>
+			<key>ypos</key>
+			<real>325</real>
+		</dict>
+		<key>F15563D1-30B4-40C0-85EE-569B02B0F0EF</key>
+		<dict>
+			<key>xpos</key>
+			<real>1240</real>
+			<key>ypos</key>
+			<real>180</real>
+		</dict>
+		<key>F1B64F7A-8B48-42C8-A3A9-C0F99B79DFB3</key>
+		<dict>
+			<key>xpos</key>
+			<real>1430</real>
+			<key>ypos</key>
+			<real>415</real>
 		</dict>
 		<key>F94D0AD4-6645-422A-9145-B142872D8C33</key>
 		<dict>
 			<key>xpos</key>
-			<real>395</real>
+			<real>510</real>
 			<key>ypos</key>
 			<real>455</real>
 		</dict>
@@ -426,7 +799,7 @@
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.1.1</string>
+	<string>1.2.0</string>
 	<key>webaddress</key>
 	<string>https://github.com/alexchantastic/alfred-open-with-neovim-workflow</string>
 </dict>
