@@ -4,8 +4,6 @@
 <dict>
 	<key>bundleid</key>
 	<string>com.alexchantastic.openwithneovim</string>
-	<key>category</key>
-	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
 		<key>23DEA358-A623-4725-95B2-79C207AF4556</key>
@@ -275,7 +273,7 @@
 				<key>escaping</key>
 				<integer>127</integer>
 				<key>script</key>
-				<string>cd $(dirname {var:filepath1}); nvim {var:filepath}</string>
+				<string>cd "$(dirname "{var:filepath1}")"; nvim "{var:filepath}"</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.terminalcommand</string>
@@ -477,7 +475,7 @@
 				<key>escaping</key>
 				<integer>127</integer>
 				<key>script</key>
-				<string>cd {var:folderpath1}; nvim</string>
+				<string>cd "{var:folderpath1}"; nvim</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.terminalcommand</string>
@@ -557,15 +555,21 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>tasksettings</key>
-				<dict/>
-				<key>taskuid</key>
-				<string>com.alfredapp.automation.core/files-and-folders/finder.selection</string>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>nvim</string>
+				<key>subtext</key>
+				<string>Open Finder folder or selection in Neovim or optionally enter a path to open</string>
+				<key>text</key>
+				<string>Open with Neovim</string>
+				<key>withspace</key>
+				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.automation.task</string>
+			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>F94D0AD4-6645-422A-9145-B142872D8C33</string>
+			<string>CC170ECD-6B82-4A05-8681-8185ACE453FE</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -587,21 +591,15 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>nvim</string>
-				<key>subtext</key>
-				<string>Open Finder folder or selection in Neovim or optionally enter a path to open</string>
-				<key>text</key>
-				<string>Open with Neovim</string>
-				<key>withspace</key>
-				<true/>
+				<key>tasksettings</key>
+				<dict/>
+				<key>taskuid</key>
+				<string>com.alfredapp.automation.core/files-and-folders/finder.selection</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
+			<string>alfred.workflow.automation.task</string>
 			<key>uid</key>
-			<string>CC170ECD-6B82-4A05-8681-8185ACE453FE</string>
+			<string>F94D0AD4-6645-422A-9145-B142872D8C33</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -799,7 +797,7 @@
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.2.0</string>
+	<string>1.2.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/alexchantastic/alfred-open-with-neovim-workflow</string>
 </dict>
